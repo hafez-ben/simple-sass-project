@@ -158,6 +158,10 @@ h4 {
   color: var(--title-color);
 }
 
+.scroll-header {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
 @media screen and (max-width: 767px) {
   .nav__menu {
     position: fixed;
@@ -212,16 +216,37 @@ h4 {
   margin-bottom: 2rem;
 }
 
+.about__container {
+  gap: 2rem;
+}
+.about__info {
+  text-align: center;
+}
+
+.support__container {
+  gap: 2rem;
+}
+.support__info {
+  text-align: center;
+}
+
 @media screen and (min-width: 576px) {
   .home {
     padding-top: 7rem;
   }
-  .home__container {
+  .home__container,
+  .about__container,
+  .support__container {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
   }
-  .home__img {
+  .home__img,
+  .about__info {
     order: 1;
+  }
+  .about__info,
+  .support__info {
+    text-align: right;
   }
   .svg__img {
     width: 100%;
@@ -258,7 +283,9 @@ h4 {
     display: block;
     padding: 0.3rem 1.5rem;
   }
-  .home__container {
+  .home__container,
+  .about__container,
+  .support__container {
     column-gap: 6rem;
   }
   .svg__img {
