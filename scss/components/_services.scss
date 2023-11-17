@@ -1,0 +1,27 @@
+.services {
+
+    
+    &__container {
+        display: grid;
+        padding-top: 1rem;
+        gap: 1.5rem;
+    }
+
+    &__info {
+        display: grid;
+        gap: 1rem;
+        text-align: center;
+        background: var(--container-color);
+        box-shadow: 0px 2px 6px hsla(var(--hue), 100%, 15%, 0.15);
+        // max-width: 90vw;
+        // margin: 0 auto;
+        padding: 2rem 1.5rem;
+        border-radius: 1rem;
+    }
+
+    &__icon {
+        font-size: 3rem;
+        color: var(--primary-color);
+    }
+    
+}

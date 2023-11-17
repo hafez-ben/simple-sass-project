@@ -194,6 +194,20 @@ h4 {
   color: var(--primary-color);
   outline: 0.02rem solid var(--primary-color);
 }
+.button__link {
+  background: var(--container-color);
+  color: var(--primary-color);
+  border: 0.02rem solid var(--primary-color);
+}
+.button__link:hover {
+  background: var(--primary-color);
+  color: var(--container-color);
+}
+.button-flex {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
 
 .button__header {
   display: none;
@@ -230,22 +244,62 @@ h4 {
   text-align: center;
 }
 
+.services__container {
+  display: grid;
+  padding-top: 1rem;
+  gap: 1.5rem;
+}
+.services__info {
+  display: grid;
+  gap: 1rem;
+  text-align: center;
+  background: var(--container-color);
+  box-shadow: 0px 2px 6px hsla(var(--hue), 100%, 15%, 0.15);
+  padding: 2rem 1.5rem;
+  border-radius: 1rem;
+}
+.services__icon {
+  font-size: 3rem;
+  color: var(--primary-color);
+}
+
+.app__container {
+  gap: 2.5rem;
+}
+.app__info {
+  text-align: center;
+}
+.app__description {
+  margin-bottom: 1.5rem;
+}
+.app__buttons {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  justify-content: center;
+  column-gap: 0.5rem;
+}
+
 @media screen and (min-width: 576px) {
   .home {
     padding-top: 7rem;
   }
   .home__container,
   .about__container,
-  .support__container {
+  .support__container,
+  .services__container,
+  .app__container {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
   }
   .home__img,
-  .about__info {
+  .about__info,
+  .app__info {
     order: 1;
   }
   .about__info,
-  .support__info {
+  .support__info,
+  .app__info,
+  .app__title {
     text-align: right;
   }
   .svg__img {
@@ -259,6 +313,9 @@ h4 {
   }
   .nav__toggle {
     display: none;
+  }
+  .app__buttons {
+    justify-content: start;
   }
 }
 @media screen and (min-width: 800px) {
@@ -283,9 +340,14 @@ h4 {
     display: block;
     padding: 0.3rem 1.5rem;
   }
+  .services__container {
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+  }
   .home__container,
   .about__container,
-  .support__container {
+  .support__container,
+  .app__container {
     column-gap: 6rem;
   }
   .svg__img {
