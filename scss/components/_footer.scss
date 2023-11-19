@@ -1,0 +1,49 @@
+.footer {
+    background: var(--primary-color-lighten);
+    padding-bottom: 2rem;
+
+
+    &__container {
+        row-gap: 2rem;
+    }
+
+    &__logo,
+    &__title {
+        font-weight: bold;
+        font-size: 1.25rem;
+        color: var(--title-color);
+    }
+
+    &__description {
+        font-size: 0.9rem;
+    }
+
+    &__links {
+        display: grid;
+        gap: 0.5rem;
+    }
+
+    &__link {
+        color: var(--title-color);
+        font-size: 0.9rem;
+    }
+
+    &__copy {
+        text-align: center;
+        margin-top: 4rem;
+        font-size: 0.9rem;
+        color: var(--text-color);
+    }
+
+    &__social {
+        display: flex;
+        column-gap: 1.5rem;
+        // font-size: 1.3rem;
+
+        &-link {
+            color: var(--title-color);
+            font-size: 1.25rem;
+        }
+    }
+
+}

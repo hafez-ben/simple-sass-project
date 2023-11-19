@@ -279,6 +279,60 @@ h4 {
   column-gap: 0.5rem;
 }
 
+.contact {
+  padding: 7rem 0 7rem 0;
+}
+.contact__description {
+  text-align: center;
+}
+.contact__info {
+  display: grid;
+  gap: 0.75rem;
+  font-weight: bold;
+}
+.contact__info span {
+  font-weight: 400;
+  color: var(--text-color);
+}
+
+.footer {
+  background: var(--primary-color-lighten);
+  padding-bottom: 2rem;
+}
+.footer__container {
+  row-gap: 2rem;
+}
+.footer__logo, .footer__title {
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: var(--title-color);
+}
+.footer__description {
+  font-size: 0.9rem;
+}
+.footer__links {
+  display: grid;
+  gap: 0.5rem;
+}
+.footer__link {
+  color: var(--title-color);
+  font-size: 0.9rem;
+}
+.footer__copy {
+  text-align: center;
+  margin-top: 4rem;
+  font-size: 0.9rem;
+  color: var(--text-color);
+}
+.footer__social {
+  display: flex;
+  column-gap: 1.5rem;
+}
+.footer__social-link {
+  color: var(--title-color);
+  font-size: 1.25rem;
+}
+
 @media screen and (min-width: 576px) {
   .home {
     padding-top: 7rem;
@@ -287,9 +341,13 @@ h4 {
   .about__container,
   .support__container,
   .services__container,
-  .app__container {
+  .app__container,
+  .contact__container {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
+  }
+  .footer__container {
+    grid-template-columns: repeat(2, 1fr);
   }
   .home__img,
   .about__info,
@@ -299,7 +357,9 @@ h4 {
   .about__info,
   .support__info,
   .app__info,
-  .app__title {
+  .app__title,
+  .contact__title,
+  .contact__description {
     text-align: right;
   }
   .svg__img {
@@ -343,6 +403,15 @@ h4 {
   .services__container {
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
+  }
+  .contact__container {
+    grid-template-columns: 3fr 1.5fr 1.25fr;
+  }
+  .footer__container {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .footer__social-link {
+    font-size: 1.4rem;
   }
   .home__container,
   .about__container,

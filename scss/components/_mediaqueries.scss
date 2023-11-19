@@ -7,9 +7,14 @@
   .about__container,
   .support__container,
   .services__container,
-  .app__container {
+  .app__container,
+  .contact__container{
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
+  }
+
+  .footer__container {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .home__img,
@@ -21,7 +26,9 @@
   .about__info,
   .support__info,
   .app__info,
-  .app__title {
+  .app__title,
+  .contact__title,
+  .contact__description {
     text-align: right;
   }
 
@@ -70,9 +77,21 @@
     padding: 0.3rem 1.5rem;
   }
 
-  .services__container {
+  .services__container{
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
+  }
+
+  .contact__container {
+    grid-template-columns: 3fr 1.5fr 1.25fr;
+  }
+
+  .footer__container {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .footer__social-link {
+    font-size: 1.4rem;
   }
 
   .home__container,

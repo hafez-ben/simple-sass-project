@@ -1,0 +1,20 @@
+.contact {
+    padding: 7rem 0 7rem 0;
+
+    &__description {
+        text-align: center;
+    }
+
+    &__info {
+        display: grid;
+        gap: 0.75rem;
+        font-weight: bold;
+
+        span {
+            font-weight: 400;
+            color: var(--text-color);
+        }
+    }
+
+    
+}
